@@ -7,7 +7,7 @@ body {
 }
 
 header{
-    height: 654px;
+    height: 656px;
     background-image: url(../img/header_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,7 +15,7 @@ header{
 }
 
 .shadow{
-    height: 654px;
+    height: 656px;
     background-color: rgba(0,0,0,0.45);
 }
 
@@ -39,4 +39,42 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: #ffffff;
+}
+
+.welcome{
+    color: #ffffff;
+    margin-top: 160px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.description{
+    color:  #ffffff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.button{
+    margin-top: 25px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 16px 33px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.button:hover{
+    background-color: white;
+    color: red;
+    cursor: pointer;
+}
+
+.getStart{
+    text-align: center;
 }
