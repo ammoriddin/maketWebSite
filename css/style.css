@@ -12,6 +12,10 @@ body {
     margin: 0 auto; 
 }
 
+.active{
+    color: #c0301c;
+}
+
 
 /* Header navigation */
 
@@ -77,7 +81,7 @@ nav ul li a{
 
 .button:hover{
     background-color: white;
-    color: red;
+    color: #c0301c;
     cursor: pointer;
 }
 
@@ -104,12 +108,17 @@ nav ul li a{
 
 .services-title{
     font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .services-dsc{
+    font-weight: 500;
+    font-family: 'Montserrat';
     color: #555555;
     font-size: 22px;
     margin-bottom: 70px;
+    text-align: center;
 }
 
 .stick{
@@ -186,8 +195,8 @@ nav ul li a{
     height: 651px;
     background-color: #f8f8f8;
     text-align: center;
-    padding: 100px 0;
-    color: #555555;
+    padding: 100px 0 200px 0;
+    color: #555;
 }
 
 .sec2 .container .randomText{
@@ -243,4 +252,126 @@ nav ul li a{
 
 .memberProfession{
     font-size: 13pt;
+}
+
+/* Works Section */
+
+.sec3{
+    padding: 100px 0;
+}
+
+.sec3 span{
+    margin-right: 27px;
+    cursor: pointer;
+}
+
+.workBlock img{
+    width:  360px;
+    height: 360px;
+    padding-top: 30px;
+    object-fit: cover;
+}
+
+.workLine{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.workBlock{
+    position: relative;
+}
+
+.workTopLayer{
+    margin-top: 40px;
+    margin-left: 10px;
+    transition: .5s ease-in-out;
+    position: absolute;
+    background-color: rgba(192,48,28,0.7);
+    top: 0;
+    left: 0;
+    height: 360px; 
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.workBlock:hover > .workTopLayer{
+    opacity: 1;
+}
+
+.workTopLayer p:nth-child(1){
+    color: #fff;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.workTopLayer p:nth-child(2){
+    color: #fff;
+    font-size: 12pt;
+}
+
+.workTopLayer p:nth-child(3) a {
+    text-decoration: none;
+    background-color: white;
+    color: #c0301c;
+    padding: 10px 20px;
+}
+
+.sec4{
+    height: 268px;
+    background-image: url(../img/getInTach.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bg-red{
+    top: 0;
+    left: 0;
+    background-color: rgba(192,48,28,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.getIntTouchBlog{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.getIntTouchBlog h2{
+    font-size: 30pt;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    line-height: 5px;
+}
+
+.sec4 .getIntTouchBlog button{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 15px 26px;
+    transition: .3s ease;
+    text-transform: uppercase;
+    font-size: 14pt;
+    margin-top: 10px;
+}
+
+.sec4 .getIntTouchBlog button:hover{
+    background-color: white;
+    color: #c0301c;
+    cursor: pointer;
 }
