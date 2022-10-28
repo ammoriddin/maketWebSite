@@ -93,9 +93,13 @@ nav ul li a{
     text-align: center;
 }
 
-.services-title, .services-dsc{
+.services-title, .services-dscription{
     color: #555555;
     font-weight: 550;
+}
+
+.services-discription{
+    line-height: 18px;
 }
 
 .services-title{
@@ -103,6 +107,7 @@ nav ul li a{
 }
 
 .services-dsc{
+    color: #555555;
     font-size: 22px;
     margin-bottom: 70px;
 }
@@ -173,4 +178,69 @@ nav ul li a{
 
 .sec1 .container .services .services-item:nth-child(3):hover .services-logo{
     background-image: url(../img/sup2.png);
+}
+
+/* About us */
+
+.sec2{
+    height: 651px;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 100px 0;
+    color: #555555;
+}
+
+.sec2 .container .randomText{
+    display: flex;
+    flex-direction: row;
+    font-size: 19px;
+    margin-bottom: 70px;
+}
+
+.sec2 .container .randomText .rndText{
+    text-align: left;
+
+}
+
+.membersBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.member .memberAva{
+    background-color: #bbbbbb;
+    width: 260px;
+    height: 260px;
+}
+
+.member:nth-child(1) .memberAva{
+    background-image: url(../img/man1.jpg);
+    padding-left: 15px;
+}
+
+.member:nth-child(2) .memberAva{
+    background-image: url(../img/man2.jpg);
+    padding-left: 7px;
+}
+
+.member:nth-child(3) .memberAva{
+    background-image: url(../img/man3.jpg);
+    padding-left: 7px;
+}
+
+.member:nth-child(4) .memberAva{
+    background-image: url(../img/man4.jpg);
+    padding-left: 7px;
+}
+
+.memberName{
+    font-size: 14pt;
+    text-transform: uppercase;
+    margin: 20px auto 17px auto;
+}
+
+.memberProfession{
+    font-size: 13pt;
 }
