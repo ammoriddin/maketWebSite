@@ -1,10 +1,19 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
 
+/* Main styles */
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: white;
-  
 }
+
+.container{
+    width: 1140px;
+    margin: 0 auto; 
+}
+
+
+/* Header navigation */
 
 header{
     height: 656px;
@@ -17,11 +26,6 @@ header{
 .shadow{
     height: 656px;
     background-color: rgba(0,0,0,0.45);
-}
-
-.container{
-    width: 1140px;
-    margin: 0 auto; 
 }
 
 .headerNavigation{
@@ -40,6 +44,8 @@ nav ul li a{
     text-decoration: none;
     color: #ffffff;
 }
+
+/* Captions */
 
 .welcome{
     color: #ffffff;
@@ -77,4 +83,94 @@ nav ul li a{
 
 .getStart{
     text-align: center;
+}
+
+/* Seervices */
+
+.sec1{
+    height: 398px;
+    padding: 90px 0;
+    text-align: center;
+}
+
+.services-title, .services-dsc{
+    color: #555555;
+    font-weight: 550;
+}
+
+.services-title{
+    font-size: 26px;
+}
+
+.services-dsc{
+    font-size: 22px;
+    margin-bottom: 70px;
+}
+
+.stick{
+    width: 50px;
+    border: 1px solid #555555;
+    background-color: #555555;
+    margin: 30px auto;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+}
+
+.services-item .services-logo{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.services-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #555555;
+    justify-content: center;
+}
+
+.services-name{
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 30px auto 23px auto;
+}
+
+.sec1 .container .services .services-item .services-logo{
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center center;
+    border: 1px solid #555555;
+    transition: all 0.3s ease-in-out;
+}
+
+.sec1 .container .services .services-item:hover .services-logo{
+    background-color: #c0301c;
+}
+
+.sec1 .container .services .services-item:nth-child(1) .services-logo{
+    background-image: url(../img/font2.png);
+}
+
+.sec1 .container .services .services-item:nth-child(1):hover .services-logo{
+    background-image: url(../img/font.png);
+}
+
+.sec1 .container .services .services-item:nth-child(2) .services-logo{
+    background-image: url(../img/code.png);
+}
+
+.sec1 .container .services .services-item:nth-child(2):hover .services-logo{
+    background-image: url(../img/code2.png);
+}
+
+.sec1 .container .services .services-item:nth-child(3) .services-logo{
+    background-image: url(../img/sup.png);
+}
+
+.sec1 .container .services .services-item:nth-child(3):hover .services-logo{
+    background-image: url(../img/sup2.png);
 }
