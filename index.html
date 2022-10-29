@@ -11,20 +11,17 @@
 <body>
     
     <!-- Header -->
-    <header>
+    <header id="home">
         <div class="shadow">
             <div class="container">
                 <div class="headerNavigation">
-                    <img src="./img/logo_site.png" alt="Logo">
+                    <a href="index.html"><img src="./img/logo_site.png" alt="Logo"></a>
                     <nav>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Works</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Clients</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#works">Works</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -41,7 +38,7 @@
 
     <!-- Services -->
 
-    <section class="sec1">
+    <section class="sec1" id="services">
         <div class="container">
             <h2 class="services-title">Services</h2>
             <hr class="stick">
@@ -73,7 +70,7 @@
     
     <!-- About Us -->
     
-    <section class="sec2">
+    <section class="sec2" id="about">
         <div class="container">
             <h2 class="services-title">About Us</h2>
             <hr class="stick">
@@ -120,21 +117,21 @@
 
     <!-- Works -->
 
-    <section class="sec3">
+    <section class="sec3" id="works">
         <div class="container">
             <h2 class="services-title">Latest works</h2>
             <hr class="stick">
             <h3 class="services-dsc">
-                <span class="active">All</span>
-                <span>Branding</span>
-                <span>Desing</span>
-                <span>Development</span>
-                <span>Strategy</span>
+                <span class="active all">All</span>
+                <span class="branding">Branding</span>
+                <span class="desing">Desing</span>
+                <span class="development">Development</span>
+                <span class="strategy">Strategy</span>
             </h3>
             <div class="work-gallery">
                 <div class="workLine">
                     <div class="workBlock">
-                        <div class="workTopLayer">
+                        <div class="workTopLayer brand">
                             <p>Hair dresser</p>                            
                             <p>branding</p>
                             <p>
@@ -247,6 +244,5 @@
     <!-- /Works -->
 
     <footer></footer>
-    <script src="./js/main.js"></script>
 </body>
 </html>

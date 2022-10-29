@@ -32,6 +32,10 @@ header{
     background-color: rgba(0,0,0,0.45);
 }
 
+.headerNavigation img:hover{
+    cursor: pointer;
+}
+
 .headerNavigation{
     padding-top: 30px;
     display: flex;
